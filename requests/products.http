@@ -1,0 +1,33 @@
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Gameboy Advance",
+    "description": "Gaming console",
+    "quantity":2
+}
+
+###
+GET {{api}}/9
+
+###
+DELETE {{api}}/8
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/9
+Content-Type: application/json
+
+{
+    "name": "Laptop Razer",
+    "description": "Gaming Laptop",
+    "quantity": 50
+}
+###
